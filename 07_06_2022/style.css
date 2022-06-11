@@ -1,0 +1,15 @@
+h1 {
+    color: red;
+    background-color: red;
+    background-color: blue;
+}
+
+.moja_klasa {
+    color: chartreuse;
+    background-color: blue;
+}
+
+p {
+    color: red;
+    background-color: rgb(187, 255, 0);
+}

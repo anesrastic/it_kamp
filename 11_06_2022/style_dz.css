@@ -1,0 +1,20 @@
+.card {
+    width: 360px;
+    height: 500px;
+    border: 1px solid #eff1f3;
+    border-radius: 10px;
+}
+
+.card img {
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.card p {
+    text-transform: uppercase;
+}
+.card_body {
+    padding: 25px;
+}
+
