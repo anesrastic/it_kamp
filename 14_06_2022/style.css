@@ -1,0 +1,47 @@
+.container {
+    height: 500px;
+    width: 700px;
+    background-color: green;
+    border: 2px solid black;
+    display: inline-block;
+    position: relative;
+}
+
+.div1,
+.div2,
+.div3,
+.div4,
+.div5 {
+    display: inline-block;
+}
+
+.div1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.div2 {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.div3 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.div4 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.div5 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
