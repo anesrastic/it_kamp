@@ -159,6 +159,23 @@ body {
     color: white;
 }
 
+.button_switch {
+    background: none;
+    color: white;
+    border: 2px solid;
+    padding: 0.5em 1em;
+    font-size: 1em;
+    border-radius: 40px;
+}
+
+.button_switch:hover {
+    border-color: #f1ff5c;
+    color: white;
+    box-shadow: 0 0.5em 0.5em -0.4em #f1ff5c;
+    transform: translateY(-0.25em); 
+    cursor: pointer;  
+}
+
 
 /* ****************************************************
 **************************************************** */
@@ -216,7 +233,7 @@ p {
     text-align: center;
     position: relative;
     top: 50%;
-    right: 7px;
+    right: 11px;
     z-index: 10;
     font-size: 18px;
     font-weight: 600;
