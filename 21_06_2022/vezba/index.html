@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -12,6 +12,192 @@
 
 <body>
     <button>Hover me</button>
+</body>
+
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/355dc97a13.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link href="https://fonts.google.com/icons?icon.query=desktop&icon.set=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,700;1,300&display=swap"
+        rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="frist">
+            <span class="material-symbols-outlined" id="menu">
+                menu
+            </span>
+
+            <p class="tailbox">TAILBLOCKS</p>
+
+            <div class="search-box">
+                <input class="search-text" type="text" name="" placeholder="Type to search">
+                <a class="search-btn" href="#">
+                    <i class="fas fa-search"></i>
+                </a>
+            </div>
+            <div class="viewcode">
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    viewBox="0 0 24 24" class="prvi-view">
+                    <path d="M16 18L22 12 16 6"></path>
+                    <path d="M8 6L2 12 8 18"></path>
+                </svg>
+                <p class="viewcod">VIEW CODE</p>
+            </div>
+
+
+
+
+            <div class="colors">
+                <button id="1" onclick="color(this)" class="boja-tema blue clr1"></button>
+                <button id="2" onclick="color(this)" class="boja-tema orange clr2"></button>
+                <button id="3" onclick="color(this)" class="boja-tema red clr3"></button>
+                <button id="4" onclick="color(this)" class="boja-tema purple clr4"></button>
+                <button id="5" onclick="color(this)" class="boja-tema pink clr5"></button>
+                <button id="6" onclick="color(this)" class="boja-tema bluee clr6"></button>
+                <button id="7" onclick="color(this)" class="boja-tema green clr7"></button>
+
+                <script>
+                    function color(z) {
+                        var a = getComputedStyle(z)
+                        var b = a.backgroundColor;
+                        var c = a.color;
+
+                        document.getElementsByClassName("frist")[0].style.backgroundColor = b;
+                        document.getElementsByClassName("krug")[0].style.backgroundColor = b;
+                        document.getElementsByClassName("krug")[1].style.backgroundColor = b;
+                        document.getElementsByClassName("krug")[2].style.backgroundColor = b;
+                        document.getElementsByClassName("krug")[3].style.backgroundColor = b;
+                        document.getElementsByClassName("fristcard")[0].style.backgroundColor = b;
+                        document.getElementsByClassName("fristcard")[1].style.backgroundColor = b;
+                        document.getElementsByClassName("fristcard")[2].style.backgroundColor = b;
+                        document.getElementsByClassName("fristcard")[3].style.backgroundColor = b;
+                        document.getElementsByClassName("prva-ikonica")[0].style.color = c;
+                        document.getElementsByClassName("prva-ikonica")[1].style.color = c;
+                        document.getElementsByClassName("prva-ikonica")[2].style.color = c;
+                        document.getElementsByClassName("prva-ikonica")[3].style.color = c;
+
+                    }
+                </script>
+
+
+            </div>
+            <svg stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"
+                class="drugi-view" viewBox="0 0 24 24">
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                <path d="M8 21h8m-4-4v4"></path>
+            </svg>
+            <svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"
+                stroke-linejoin="round" class="treci-view">
+                <rect x="4" y="2" width="16" height="20" rx="2" ry="2"></rect>
+                <path d="M12 18h.01"></path>
+            </svg>
+            <svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"
+                stroke-linejoin="round" class="cetvrti-view">
+                <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
+                <path d="M12 18h.01"></path>
+            </svg>
+            <input type="checkbox" class="checkbox" id="chk" />
+            <label class="label" for="chk">
+                <i class="fas fa-moon"></i>
+                <i class="fas fa-sun"></i>
+                <div class="ball"></div>
+            </label>
+        </div>
+        <script>const chk = document.getElementById('chk');
+
+            chk.addEventListener('change', () => {
+                document.body.classList.toggle('dark');
+            });</script>
+        <div class="container2">
+
+
+            <div class="cards">
+
+                <div class="fristcard">
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="2" class="prva-ikonica" viewBox="0 0 24 24">
+                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                    </svg>
+                </div>
+                <div class="secondtext">
+                    <h1>Shooting Stars</h1>
+                    <p>VHS cornhole pop-up, try-hard 8-bit iceland helvetica. Kinfolk bespoke try-hard cliche palo
+                        santo offal.</p>
+                </div>
+                <div class="linija4"></div>
+                <div class="krug">1</div>
+            </div>
+            <div class="cards">
+                <div class="fristcard">
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="2" class="prva-ikonica" viewBox="0 0 24 24">
+                        <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                    </svg>
+                </div>
+                <div class="secondtext">
+                    <h1>The Catalyzer</h1>
+                    <p>VHS cornhole pop-up, try-hard 8-bit iceland helvetica. Kinfolk bespoke try-hard cliche palo
+                        santo offal.</p>
+                </div>
+                <div class="linija4"></div>
+                <div class="krug">2</div>
+            </div>
+            <div class="cards">
+                <div class="fristcard">
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="2" class="prva-ikonica" viewBox="0 0 24 24">
+                        <circle cx="12" cy="5" r="3"></circle>
+                        <path d="M12 22V8M5 12H2a10 10 0 0020 0h-3"></path>
+                    </svg>
+                </div>
+                <div class="secondtext">
+                    <h1>The 400 Blows</h1>
+                    <p>VHS cornhole pop-up, try-hard 8-bit iceland helvetica. Kinfolk bespoke try-hard cliche palo
+                        santo offal.</p>
+                </div>
+                <div class="linija4"></div>
+                <div class="krug">3</div>
+            </div>
+            <div class="cards">
+                <div class="fristcard">
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="2" class="prva-ikonica" viewBox="0 0 24 24">
+                        <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
+                        <circle cx="12" cy="7" r="4"></circle>
+                    </svg>
+                </div>
+                <div class="secondtext">
+                    <h1>Neptune</h1>
+                    <p>VHS cornhole pop-up, try-hard 8-bit iceland helvetica. Kinfolk bespoke try-hard cliche palo
+                        santo offal.</p>
+                </div>
+                <div class="linija4"></div>
+                <div class="krug">4</div>
+            </div>
+
+        </div>
 </body>
 
 </html>
