@@ -1,0 +1,274 @@
+html {
+    font-family: ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    line-height: 1.5;
+}
+
+body {
+    font-family: system-ui,-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji';
+    color: #5e1827;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    display: block;
+    font-size: 1.4em;
+    margin: 0;
+    font-weight: 500;
+}
+
+h2 {
+    display: block;
+    font-size: 1em;
+    margin: 0;
+    font-weight: bold;
+}
+
+h3 {
+    color: #9b7280;
+    display: block;
+    font-size: 1em;
+    font-weight: 400;
+    margin: 0;
+}
+
+p {
+    color: #837280;
+    margin: 9px 0;
+}
+
+
+
+/* **************************HEADER************************* */
+
+.header {
+    width: 100vw;
+    height: 64px;
+    margin: 0;
+    color: white;
+    background-color: #6366f1;
+}
+
+.menu_icon {
+    display: inline-block;
+    margin-top: 22px;
+    padding-left: 13px;
+}
+
+.menu_icon .line {
+    background-color: #ffffff;
+    height: 2px;
+    display: block;
+    width: 18px;
+}
+
+.menu_icon .line+.line {
+    margin-top: 3px;
+}
+
+.right {
+    float: right;
+    margin-top: 0px;
+    padding-right: 31px;
+    position: relative;
+    top: 7px;
+}
+
+
+.colors {
+    display: inline-block;
+    border: 1px solid;
+    border-radius: 15px;
+    height: 27px;
+    background-color: white;
+    margin-right: 20px;
+    padding-bottom: 8px;
+}
+
+.devices img {
+    position: relative;
+    top: 13px;
+    margin-right: 20px;
+}
+
+.view {
+    border: 1px solid white;
+    border-radius: 23px;
+    padding: 7px 15px 6px 13px;
+    position: relative;
+    top: 6px;
+    margin-right: 20px;
+}
+
+
+
+/* ************************************************** */
+/* Buttons na header-u */
+.button {
+    background-color: #6366f1;
+    border: none;
+    color: white;
+    padding: 9px 9px;
+    border-radius: 50%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 0px 0px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.button1 {
+    background-color: white;
+    color: black;
+    border: 2px solid #6366f1;
+}
+
+.button1:hover {
+    background-color: #6366f1;
+    color: white;
+}
+
+.button2 {
+    background-color: white;
+    color: black;
+    border: 2px solid #f59e0b;
+}
+
+.button2:hover {
+    background-color: #f59e0b;
+    color: white;
+}
+
+.button3 {
+    background-color: white;
+    color: black;
+    border: 2px solid #ef4444;
+}
+
+.button3:hover {
+    background-color: #ef4444;
+    color: white;
+}
+
+.button4 {
+    background-color: white;
+    color: black;
+    border: 2px solid #8b5cf6;
+}
+
+.button4:hover {
+    background-color: #8b5cf6;
+}
+
+.button5 {
+    background-color: white;
+    color: black;
+    border: 2px solid #ec4899;
+}
+
+.button5:hover {
+    background-color: #ec4899;
+    color: white;
+}
+
+.button6 {
+    background-color: white;
+    color: black;
+    border: 2px solid #3b82f6;
+}
+
+.button6:hover {
+    background-color: #3b82f6;
+    color: white;
+}
+
+.button7 {
+    background-color: white;
+    color: black;
+    border: 2px solid #3b82f6;
+}
+
+.button7:hover {
+    background-color: #3b82f6;
+    color: white;
+}
+
+.button_switch {
+    background: none;
+    color: white;
+    border: 2px solid;
+    padding: 0.5em 1em;
+    font-size: 1em;
+    border-radius: 40px;
+}
+
+.button_switch:hover {
+    border-color: #f1ff5c;
+    color: white;
+    box-shadow: 0 0.5em 0.5em -0.4em #f1ff5c;
+    transform: translateY(-0.25em);
+    cursor: pointer;
+}
+
+.naslov {
+    width: 80%;
+    height: 100px;
+    margin: 100px auto 0 auto;
+    /* background-color: #8b5cf6;
+    border: 1px solid black; */
+    text-align: center;
+}
+
+.container {
+    width: 80%;
+    height: 100%;
+    margin: 100px auto 0 auto;
+    /* background-color: #f1ff5c;
+    border: 1px solid black; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.kartica {
+    width: 45%;
+    min-width: 300px;
+    height: 250px;
+    /* background-color: #ef4444;
+    border: 1px solid black; */
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.img_part {
+    width: 30%;
+    height: 200px;
+    /* background-color: #5e1827;
+    border: #5e1827; */
+}
+
+img {
+    opacity: 0.8;
+    width: 100%;
+  }
+
+i {
+    margin: 0 3px;    
+}
+
+.fa {
+    font-size: 1.4em;
+}
+
+.text_part {
+    width: 64%;
+    height: 200px;
+    margin-left: 20px;
+    /* background-color: aliceblue;
+    border: 1px solid black */
+}
