@@ -1,5 +1,9 @@
+
+
 *, ::after, ::before {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
@@ -8,4 +12,15 @@ body {
     font-weight: normal;
     font-style: normal;
     font-size: 16px;
+    line-height: 1.5;
+    color: #212529;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Mitr",sans-serif;
+    color: #2A2A2A;
+    margin-top: 0px;
+    font-style: normal;
+    font-weight: 900;
+    text-transform: normal;
 }
