@@ -102,3 +102,33 @@
     background: none;
     color: #FFBD00 !important;
 }
+
+.footer-bottom-area {
+    width: 100%;
+}
+
+.container {
+    width: 70%;
+}
+
+.footer-bottom-area .footer-border {
+    width: 100%;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    padding-top: 23px;
+    padding-bottom: 10px;
+}
+
+.footer-copy-right p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #9B9EAC;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 2;
+    margin-bottom: 12px;
+}
+
+.footer-copy-right p a {
+    color: #FFBD00;
+}
