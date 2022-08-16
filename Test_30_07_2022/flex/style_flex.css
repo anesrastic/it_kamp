@@ -1,0 +1,77 @@
+*,
+::after,
+::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.naslov {
+    margin: 50px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    margin: auto;
+    padding: 0px 23px 0px 2px;
+    width: 50%;
+    height: auto;
+    border: 10px solid brown;
+}
+
+.prvi-red {
+    margin: 10px;
+    width: 100%;
+    height: 70px;
+    background-color: brown;
+}
+
+.wrapper {
+    margin: 10px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    gap: 20px;
+}
+
+.right {
+    width: 50%;
+    height: 250px;
+    background-color: brown;
+}
+
+.left {
+    width: 100%;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.gornji {
+    width: 100%;
+    height: 50%;
+    background-color: brown;
+}
+
+.donji {
+    width: 100%;
+    height: 50%;
+    background-color: brown;
+}
+
+.about {
+    margin: 10px;
+    width: 100%;
+    height: 250px;
+    background-color: brown;
+}
+
+.footer {
+    margin: 10px;
+    width: 100%;
+    height: 80px;
+    background-color: brown;
+}

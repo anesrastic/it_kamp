@@ -1,0 +1,40 @@
+.grid-container {
+    width: 80%;
+    height: 800px;
+    margin: auto;
+    display: grid;    
+    grid-template-areas:
+        'header header header header header header'
+        'sidebar main main main main right'
+        'sidebar footer footer footer footer right';
+    gap: 10px;
+    background-color: blue;
+    padding: 10px;
+}
+
+.grid-container>div {
+    background-color: chocolate;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 50px;
+}
+
+.header {
+    grid-area: header;
+}
+
+.sidebar {
+    grid-area: sidebar;
+}
+
+.main {
+    grid-area: main;
+}
+
+.right {
+    grid-area: right;
+}
+
+.footer {
+    grid-area: footer;
+}
