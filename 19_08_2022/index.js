@@ -6,4 +6,4 @@ function ispisiOblik(n){
       document.write("<br>");
   }
 }
-ispisiOblik(8);
+ispisiOblik(20);
