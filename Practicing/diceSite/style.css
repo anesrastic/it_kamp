@@ -1,0 +1,92 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+#wrapper {
+    width: 100%;
+    height: 100vh;
+    background-color: gray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#naslov {
+    width: 100%;
+    height: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#pobednik {  
+    font-size: 8rem;
+}
+
+.kockice {
+    width: 100%;
+    display: flex;
+}
+
+.igrac1 {
+    width: 50%;
+    height: auto;
+    margin-right: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.igrac1 .textPart {
+    width: 210px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.igrac2 {
+    width: 50%;
+    margin-left: 25px;
+    height: auto;
+}
+
+.igrac2 .textPart {
+    width: 210px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dice {
+    width: 210px;
+    height: 210px;
+    border-radius: 10px;
+    background-color: blue;
+}
+
+.prviRed, .centar, .treciRed {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.one, .two, .three, .four, .five, .six, .seven {
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.invisibile {
+    visibility: hidden;
+}
