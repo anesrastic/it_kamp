@@ -18,6 +18,7 @@ for (let i = 0; i < drums.length; i++) {
 document.addEventListener("keydown", function (event) {
     makeSound(event.key);
     buttonAnimation(event.key);
+    console.log(event.key)
 });
 
 
