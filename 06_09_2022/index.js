@@ -50,14 +50,18 @@
 // console.log(suma);
 
 
-arr = [undefined, NaN, 0, 15, false, -22, "", 47, null, undefined];
-arr2 = [];
-console.log(arr);
+// arr = [undefined, NaN, 0, 15, false, -22, "", 47, null, undefined];
+// arr2 = [];
+// console.log(arr);
 
-arr.forEach((el, i) => {
-    if(el){
-        arr2.push(el);
-    }
-});
+// arr.forEach((el, i) => {
+//     if(el){
+//         arr2.push(el);
+//     }
+// });
 
-console.log(arr2);
+// console.log(arr2);
+
+arr1 = [1, 2, 3];
+arr2 = [100, 2, 1, 10];
+
