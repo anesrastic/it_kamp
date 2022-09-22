@@ -78,7 +78,7 @@
 //     return arr.filter(el => el === (arr.filter(e => e === 1).length)).length
 // }
 
-// console.log(arr.filter(e => e === 1));
+// console.log(stantonMeasure(arr));
 
 // a = 153;
 
@@ -238,50 +238,154 @@
 
 // console.log(findMissingLetter(arr));
 
-str = 'yearComeCaseOwn';
+// str = 'yearComeCaseOwn';
 
-function solution(str) {
-    a = str.split("");
+// function solution(str) {
+//     a = str.split("");
 
-    asci = a.map((el) => {
-        return el.charCodeAt(0);
-    });
-    console.log(asci);
+//     asci = a.map((el) => {
+//         return el.charCodeAt(0);
+//     });
 
-    b = asci.filter((el) => {
-        return el >= 65 && el <= 90;
-    });
-    console.log(b);
-    c = b.map((el) => {
-        return String.fromCharCode(el);
-    });
+//     b = asci.map((el, index) => {
+//         if (el >= 65 && el <= 90) {
+//             return index;
+//         }
+//     });
 
-    d = c.filter((value, index, self) => {
-        return self.indexOf(value) === index;
-    });
+//     ind = b.filter(el => {
+//         return el;
+//     });
 
-    function onlyUnique(value, index, self) {
-        return self.indexOf(value) === index;
-    }
+//     c = asci.map((el) => {
+//         return String.fromCharCode(el);
+//     });
+
+//     rez = c.slice(0, ind[0]).join("");
+//     for (let i = 0; i < ind.length; i++) {
+//         if (i !== ind.length - 1) {
+//             rez += " " + c.slice(ind[i], ind[i + 1]).join("");
+//         } else {
+//             rez += " " + c.slice(ind[i], str.length).join("");
+//         }
+
+//     }
+//     return rez;
+// }
+
+// function solution(string) {
+//     string = string.split('').map(function (el) {
+//       if (el === el.toUpperCase()) {
+//         el = ' ' + el
+//       }
+//       return el
+//     })
+//     console.log(string);
+//     console.log(string.join(''));
+//     return string.join('')
+//   }
 
 
-    console.log(d);
-    final = "";
+// console.log(solution(str));
 
-    for (let i = 0; i < d.length; i++) {
-        rez = "";
-        for (let j = 0; j < str.length; j++) {
-            if(d[i] === str[j]){
-                rez += " " + str[j];
-            } else {
-                rez += str[j];
-            }
+
+// str = "This is a string";
+// loc = 3;
+// num = 5;
+
+// function modifyMultiply(str, loc, num) {
+//     a = str.split(" ");
+
+//     rez = [];
+
+//     for(i=0; i<num; i++){
+//         rez.push(a[loc]);
+//     }
+
+//     return rez.join('-');
+// } 
+
+// console.log(modifyMultiply(str, loc, num));
+
+
+
+// dt = new Date("21/01/2017");
+
+// console.log(dt.getDate());
+
+// ime = "Anes Rastic Hamza";
+
+// function abbrevName(ime){
+//     arr = ime.split(" ");
+
+//     skr = [];
+
+//     for(i = 0; i<arr.length; i++){
+//         skr.push(arr[i][0]);
+//     }
+
+//   skracenica = skr.join(".");
+//   console.log(skracenica.toUpperCase());
+
+//     //return skracenica.toUperCase();
+
+// }
+
+// abbrevName(ime);
+
+
+datum = "14/02/1985";
+
+function dayOfTheWeek(datum) {
+
+    meseci = [
+        ["01", "January"],
+        ["02", "February"],
+        ["03", "March"],
+        ["04", "April"],
+        ["05", "May"],
+        ["06", "Jun"],
+        ["07", "July"],
+        ["08", "August"],
+        ["09", "September"],
+        ["10", "October"],
+        ["11", "November"],
+        ["12", "December"]
+    ];
+
+    datum = datum.split("/");
+    m = "";
+
+    for (let i = 0; i < meseci.length; i++) {
+        if (meseci[i][0] === datum[1]) {
+            m = meseci[i][1];
         }
-        final += rez;
     }
 
-    return final;
+    datumString = m + " " + datum[0] + ", " + datum[2];
+
+    dani = [
+        [0, "Sunday"],
+        [1, "Monday"],
+        [2, "Tuesday"],
+        [3, "Wednesday"],
+        [4, "Thursday"],
+        [5, "Friday"],
+        [6, "Saturday"]
+    ];
+
+    d = new Date(datumString);
+    day = d.getDay();
+    rez = "";
+
+    for (let i = 0; i < dani.length; i++) {
+        if (dani[i][0] === day) {
+            rez = dani[i][1];
+        }
+    }
+
+    return rez;
 }
 
 
-console.log(solution(str));
+console.log(dayOfTheWeek(datum));
